@@ -72,7 +72,7 @@ export { nowStr };
 // 优点：
 // 不需要redux(rematch)一堆模板语法。name reducer effects...。
 // 不需要被React函数组件奴役，比如一些闭包引发的问题。
-// 不需要被react的use-callback use-effect等hooks奴役(deps:[xxx,xxx,fn,ref,xx])，因为这些设计是反开发工学的。
+// 不需要被react的use-callback use-effect等hooks奴役(deps:[xxx,xxx,fn,ref,xx]，这call 那call)，因为这些设计是反开发工学的。
 // Provider写法，会导致各种context嵌套。
 // 可以抽象通用逻辑，写成class形式，封装继承等。
 // react仅仅承担component tree， state tree分离。
